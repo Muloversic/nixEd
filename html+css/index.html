@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>HTML+CSS</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header" id="header">
+			<div class="header__body">
+				<nav class="header__navigation navigation">
+					<img src="./img/logo.png" alt="logo" class="navigation__logo">
+					<ul class="navigation__list">
+						<li class="navigation__list-item"><a class="navigation__list-link" href="#header">Home</a></li>
+						<li class="navigation__list-item"><a class="navigation__list-link" href="#main">Main</a></li>
+						<li class="navigation__list-item"><a class="navigation__list-link" href="#footer">Footer</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<section class="progress-bar">
+		<progress class="progress-bar__item" max="100" value="25">
+	</section>
+	<main class="content">
+		<section class="content__carusel carusel">
+			<div class="carusel__body">
+				<button class="carusel__btn"></button>
+				<ul class="carusel__list">
+					<li class="carusel__item">
+						<img class="carusel__photo" src="./img/cat1.jpg" alt="cat">
+					</li>
+					<li class="carusel__item">
+						<img class="carusel__photo" src="./img/cat2.jpg" alt="cat">
+					</li>
+					<li class="carusel__item">
+						<img class="carusel__photo" src="./img/cat3.jpg" alt="cat">
+					</li>
+				</ul>
+				<button class="carusel__btn"></button>
+			</div>
+		</section>
+		<section class="content__accordion accordion">
+			<div class="accordion__body">
+				<div class="accordion__side">
+					<div class="accordion__side-header">
+						<h3 class="accordion__side-title">CSS PRACTICE</h3>
+					</div>
+					<div class="accordion__side-block"></div>
+				</div>
+				<div class="accordion__content ">
+					<h1 class="accordion__title">Lorem ipsum</h1>
+					<p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Numquam laboriosam ullam temporibus quis facilis! Non, ab rem quisquam, 
+						magnam harum autem dolor accusantium quasi odit eos libero quo reprehenderit et!</p>
+				</div>
+			</div>
+			<div class="accordion__body">
+				<div class="accordion__side">
+					<div class="accordion__side-header">
+						<h3 class="accordion__side-title">CSS PRACTICE</h3>
+					</div>
+					<div class="accordion__side-block"></div>
+				</div>
+				<div class="accordion__content ">
+					<h1 class="accordion__title">Lorem ipsum</h1>
+					<p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Numquam laboriosam ullam temporibus quis facilis! Non, ab rem quisquam, 
+						magnam harum autem dolor accusantium quasi odit eos libero quo reprehenderit et!</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
