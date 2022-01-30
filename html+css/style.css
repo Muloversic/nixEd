@@ -177,7 +177,6 @@ p, ul, ol{
 .accordion__content{
 	position: absolute;
 	width: 400px;
-	background-color: rgb(255, 2, 2);
 	top: 0;
 	right: 0;
 	height: inherit;
@@ -195,9 +194,16 @@ p, ul, ol{
 
 .accordion__side{
 	height: 100%;
-	background-color: rgb(107, 0, 0);
 	font-size: 0;
 	width: 80px;
+}
+
+.accordion__side-block{
+	height: 120px;
+	position: relative;
+	overflow: hidden;
+	width: 80px;
+	font-size: 20px;
 }
 
 .accordion__side-header{
@@ -217,28 +223,19 @@ p, ul, ol{
 	transform: rotate(90deg);
 }
 
-.accordion__side-block{
-	height: 120px;
-	position: relative;
-	overflow: hidden;
-	width: 80px;
-	background-color: rgb(255, 2, 2);
-	font-size: 20px;
-}
-
 .accordion__side-block::after{
 	content: '';
 	display: block;
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	background-color: rgb(107, 0, 0);
 	border: 22px solid #fff;
 	transform: rotate(45deg);
 	top: 16%;
 	left: -53%;
 }
 
+/* classes to roll content */
 .accordion__content--hidden{
 	display: none;
 }
@@ -246,3 +243,57 @@ p, ul, ol{
 .accordion__body--small{
 	width: 80px;
 }
+
+/* =========================== */
+/* color for accordion */
+/* first block */
+.accordion__body--simple{
+	background-color: rgb(255, 2, 2);
+}
+
+.accordion__body--simple::after,
+.accordion__body--simple-gradation{
+	background-color: rgb(107, 0, 0);
+}
+
+/* second block */
+.accordion__body--architecture{
+	background-color: rgb(240, 168, 36);
+}
+
+.accordion__body--architecture::after,
+.accordion__body--architecture-gradation{
+	background-color: rgb(167, 117, 25);
+}
+
+/* third block */
+.accordion__body--weather{
+	background-color: rgb(255, 253, 116);
+}
+
+.accordion__body--weather::after,
+.accordion__body--weather-gradation{
+	background-color: rgb(147, 156, 60);
+}
+
+/* fourth block */
+.accordion__body--city{
+	background-color: rgb(0, 155, 21);
+}
+
+.accordion__body--city::after,
+.accordion__body--city-gradation{
+	background-color: rgb(34, 105, 44);
+}
+/* fifth block */
+.accordion__body--people{
+	background-color: rgb(0, 250, 33);
+}
+
+.accordion__body--people::after,
+.accordion__body--people-gradation{
+	background-color: rgb(70, 161, 82);
+}
+
+
+
