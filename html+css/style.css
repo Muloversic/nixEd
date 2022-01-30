@@ -184,6 +184,35 @@ p, ul, ol{
 	text-align: justify;
 	color: #fff;
 	overflow:auto;
+	z-index: 2;
+}
+
+.content__form{
+	position: relative;
+	width: 230px;
+	padding: 10px;
+	margin: 0 0 20px 0;
+}
+.content__form::after{
+	content: "";
+	background: url(./img/cat1.jpg) center/cover no-repeat;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+.accordion__content-bg{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	padding-top: 25%;
+
 }
 
 .accordion__title{
@@ -209,6 +238,8 @@ p, ul, ol{
 .accordion__side-header{
 	writing-mode:vertical-rl;
 	transform:scale(-1);
+	min-height: 225px;
+	text-align: center;
 }
 
 .accordion__side-title{
@@ -233,6 +264,50 @@ p, ul, ol{
 	transform: rotate(45deg);
 	top: 16%;
 	left: -53%;
+}
+
+.form{
+	width: 210px;
+	text-align: left;
+
+}
+
+.form-label{
+	display: inline-block;
+	margin: 10px 0 5px 0;
+}
+
+.form-label:first-child{
+	margin-top: 0;
+}
+
+.form-input{
+	padding: 5px;
+	outline: none;
+	border: none;
+}
+
+.form-input:invalid:not(:placeholder-shown){
+	border: 1px dashed red;
+}
+
+.form-btn{
+	border: none;
+	padding: 5px 20px;
+	text-transform: capitalize;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.form-btn:hover{
+	border-radius: 50%;
+	height: 3em;
+	width: 3em;
+	color:transparent;
+}
+
+.form-btn:first-of-type{
+	margin-right: 20px;
 }
 
 /* classes to roll content */

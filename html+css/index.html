@@ -46,6 +46,7 @@
 				<button class="carusel__btn"></button>
 			</div>
 		</section>
+	
 		<section class="content__accordion accordion">
 			<div class="accordion__body accordion__body--simple ">
 				<div class="accordion__side accordion__body--simple-gradation">
@@ -54,7 +55,7 @@
 					</div>
 					<div class="accordion__side-block accordion__body--simple"></div>
 				</div>
-				<div class="accordion__content ">
+				<div class="accordion__content">
 					<h1 class="accordion__title">Lorem ipsum</h1>
 					<p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Numquam laboriosam ullam temporibus quis facilis! Non, ab rem quisquam, 
@@ -118,6 +119,31 @@
 				</div>
 			</div>
 		</section>
+		<section class="content__form">
+			<form class="accordion__form form">
+				<label for="form-name" class="form-label">Your name</label>
+				<input type="text" name="name" id="form-name" placeholder="name" required class="form-input" >
+
+				<label for="form-surname" class="form-label">Your surname</label>
+				<input type="text" name="surname" id="form-surname" placeholder="surname" required class="form-input">
+
+				<label for="form-age" class="form-label">Your age</label>
+				<input type="number" name="age" id="form-age" placeholder="16" required class="form-input">
+
+				<label for="form-email" class="form-label">Your email</label>
+				<input type="email" name="email" id="form-email" placeholder="email" required class="form-input">
+
+				<label for="form-gender-male" class="form-label">Male</label>
+				<input type="radio" name="gender" id="form-gender-male" required class="form-input">
+
+				<label for="form-gender-male" class="form-label">Female</label>
+				<input type="radio" name="gender" id="form-gender-female" required class="form-input">
+				<br>
+				<button type="reset" class="form-btn">reset</button>
+				<button type="submit" class="form-btn">submit</button>
+			</form>
+		</section>
 	</main>
+	
 </body>
 </html>
