@@ -23,6 +23,25 @@ p, ul, ol{
 	z-index: 10;
 }
 
+@supports (height: 100vh) {
+	body {
+		background: linear-gradient(to right top, #0089f2 50%, #ddd 50%);
+		background-size: 100% calc(100% - 100vh + 104px);
+		background-repeat: no-repeat;
+	}
+
+	body:before {
+		content:"";
+		position:fixed;
+		left:0px;
+		top:104px;
+		bottom: 0;
+		width:100%;
+		background:#fff;
+		z-index:-1;
+	}
+}
+
 .container{
 	height: 100px;
 }
@@ -36,7 +55,6 @@ p, ul, ol{
 .navigation{
 	position: relative;
     height: 5em;
-
 }
 
 .navigation__logo{
@@ -51,15 +69,12 @@ p, ul, ol{
 	position: absolute;
     top: 50%;
 	right: 0;
-	
 	transform: translateY(-50%);
 }
 
 .navigation__list-item{
 	display: inline-block;
 	margin-left: 20px;
-
-
 }
 
 .navigation__list-item:first-child{
@@ -78,86 +93,117 @@ p, ul, ol{
 
 .navigation__list-link:hover{
 	color: rgb(202, 48, 48);
-	
-}
-
-.progress-bar{
-	width: 80%;
-	margin: 0 auto;
-	position: relative;
-	z-index: 11;
-}
-
-.progress-bar__item{
-	position: fixed;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .content{
 	width: 80%;
-	margin: 30px auto 0 auto;
+	margin: 128px auto 0 auto;
 }
 
-.carusel__body{
-	display: inline-block;
-	position: relative;
-	left: 50%;
-	background-color: rgb(69, 157, 197);
-	transform: translateX(-50%);
-	padding: 20px 90px;
+.carusel__input{
+	display: none;
 }
 
-.carusel__list{
-	display: inline-block;
+.carusel{
+    position: relative;
+    max-width: 1200px;
+    height: 400px;
+    max-height: 100vh;
+    margin: 20px auto;
+    overflow: hidden;
+    user-select: none;
+	background-color: rgb(82, 199, 219);
 }
 
-.carusel__item{
-	display: inline-block;
-	margin-left: 10px;
+.carusel__item {
+    position: absolute; 
+    top: 25%;
+    display: none;
+    width: 100%;
+    height: 60%;
+    background: center no-repeat;
+    background-size: contain;
+    transition: left 0.5s, transform 0.5s;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
-.carusel__item:first-child{
-	margin-left: 0;
+.carusel__item1{
+	background-image: url(https://source.unsplash.com/400x400/?sig=1)
+}
+.carusel__item2{
+	background-image: url(https://source.unsplash.com/400x400/?sig=2)
+}
+.carusel__item3{
+	background-image: url(https://source.unsplash.com/400x400/?sig=3)
+}
+.carusel__item4{
+	background-image: url(https://source.unsplash.com/400x400/?sig=4)
+}
+.carusel__item5{
+	background-image: url(https://source.unsplash.com/400x400/?sig=5)
+}
+.carusel__item6{
+	background-image: url(https://source.unsplash.com/400x400/?sig=6)
 }
 
-.carusel__photo{
-	object-fit: cover;
-	width: 250px;
-	height: 175px;
-	opacity: 0.91;
-	box-shadow: 0px 4px 25px 23px rgba(141, 0, 0, 0.2);
-}
-
-.carusel__btn{
-	position: absolute;
-	top: 50%;
-	transform: translateX(-50%);
+.carusel__arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: #999;
+    cursor: pointer;
+	width: 2em;
+	height: 2em;
 	border-radius: 50%;
-	width: 20px;
-	height: 20px;
-	border: none;
-	cursor: pointer;
 }
 
-.carusel__btn:first-of-type{
-	left: 3%;
+input:checked+.carusel__block *,
+input:checked+.carusel__block+input+div .carusel__item,
+input:checked+.carusel__block+input+div+input+div * {
+	display: block;
 }
 
-.carusel__btn:last-of-type{
-	right: 0%;
+input:checked+.carusel__block .carusel__item {
+	left: -25%; 
 }
 
-.carusel__btn:first-of-type::after{
+input:checked+.carusel__block+input+div .carusel__item {
+	left: 0; 
+}
+
+input:checked+.carusel__block+input+div+input+div .carusel__item {
+	left: 25%; 
+}
+
+input:checked+.carusel__block .carusel__arrow {
+	left: 0;
+}
+input:checked+.carusel__block+input+div+input+div .carusel__arrow {
+	right: 0;
+}
+
+input:checked+.carusel__block .carusel__arrow{
+	left: 5%;
+}
+
+input:checked+.carusel__block+input+div+input+div .carusel__arrow{
+	right: 5%;
+}
+
+input:checked+.carusel__block .carusel__arrow:before {
 	content: '<';
-	color: rgb(69, 157, 197);
-	
-}
+	display: block;
+	margin: 4px 0 0 10px;
 
-.carusel__btn:last-of-type::after{
+}
+input:checked+.carusel__block+input+div+input+div .carusel__arrow:before{
 	content: '>';
-	color: rgb(69, 157, 197);
+	display: block;
+	margin: 4px 0 0 10px;
 }
 
 .accordion{
@@ -173,7 +219,6 @@ p, ul, ol{
 	display: inline-block;
 }
 
-
 .accordion__content{
 	position: absolute;
 	width: 400px;
@@ -184,7 +229,6 @@ p, ul, ol{
 	text-align: justify;
 	color: #fff;
 	overflow:auto;
-	z-index: 2;
 }
 
 .content__form{
@@ -207,7 +251,6 @@ p, ul, ol{
 
 .accordion__content-bg{
 	position: absolute;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	opacity: 0.5;
@@ -265,6 +308,81 @@ p, ul, ol{
 	top: 16%;
 	left: -53%;
 }
+.accordion__body:hover{
+	width: 480px;
+}
+
+.accordion__body:hover .accordion__content{
+	display: block;
+}
+
+
+/* classes to roll content */
+.accordion__content--hidden{
+	display: none;
+}
+
+.accordion__body--small{
+	width: 80px;
+}
+
+/* =========================== */
+/* color for accordion */
+/* first block */
+.accordion__body--color:nth-of-type(1),
+.accordion__body:nth-of-type(1) .accordion__side-block
+{
+	background-color: rgb(255, 2, 2);
+}
+
+.accordion__body:nth-of-type(1) .accordion__body--color-gradation,
+.accordion__side--color:nth-of-type(1)::after
+{
+	background-color: rgb(107, 0, 0);
+}
+
+/* second block */
+.accordion__body--color:nth-of-type(2),
+.accordion__body:nth-of-type(2) .accordion__side-block{
+	background-color: rgb(240, 168, 36);
+}
+
+.accordion__body:nth-of-type(2) .accordion__body--color-gradation,
+.accordion__side--color:nth-of-type(2)::after{
+	background-color: rgb(167, 117, 25);
+}
+
+/* third block */
+.accordion__body--color:nth-of-type(3),
+.accordion__body:nth-of-type(3) .accordion__side-block{
+	background-color: rgb(218, 216, 99);
+}
+
+.accordion__body:nth-of-type(3) .accordion__body--color-gradation,
+.accordion__side--color:nth-of-type(3)::after{
+	background-color: rgb(147, 156, 60);
+}
+
+/* fourth block */
+.accordion__body--color:nth-of-type(4),
+.accordion__body:nth-of-type(4) .accordion__side-block{
+	background-color: rgb(0, 155, 21);
+}
+
+.accordion__body:nth-of-type(4) .accordion__body--color-gradation,
+.accordion__side--color:nth-of-type(4)::after{
+	background-color: rgb(34, 105, 44);
+}
+/* fifth block */
+.accordion__body--color:nth-of-type(5),
+.accordion__body:nth-of-type(5) .accordion__side-block{
+	background-color: rgb(0, 250, 33);
+}
+
+.accordion__body:nth-of-type(5) .accordion__body--color-gradation,
+.accordion__side--color:nth-of-type(5)::after{
+	background-color: rgb(70, 161, 82);
+}
 
 .form{
 	width: 210px;
@@ -310,65 +428,13 @@ p, ul, ol{
 	margin-right: 20px;
 }
 
-/* classes to roll content */
-.accordion__content--hidden{
-	display: none;
+.footer{
+	text-align: center;
+	padding: 40px 0;
+	background: rgb(131,58,180);
+	background: linear-gradient(34deg, rgba(131,58,180,1) 0%, rgba(29,253,213,1) 57%, rgba(252,176,69,1) 100%);
 }
 
-.accordion__body--small{
-	width: 80px;
+.footer span{
+	font-size: 20px;
 }
-
-/* =========================== */
-/* color for accordion */
-/* first block */
-.accordion__body--simple{
-	background-color: rgb(255, 2, 2);
-}
-
-.accordion__body--simple::after,
-.accordion__body--simple-gradation{
-	background-color: rgb(107, 0, 0);
-}
-
-/* second block */
-.accordion__body--architecture{
-	background-color: rgb(240, 168, 36);
-}
-
-.accordion__body--architecture::after,
-.accordion__body--architecture-gradation{
-	background-color: rgb(167, 117, 25);
-}
-
-/* third block */
-.accordion__body--weather{
-	background-color: rgb(255, 253, 116);
-}
-
-.accordion__body--weather::after,
-.accordion__body--weather-gradation{
-	background-color: rgb(147, 156, 60);
-}
-
-/* fourth block */
-.accordion__body--city{
-	background-color: rgb(0, 155, 21);
-}
-
-.accordion__body--city::after,
-.accordion__body--city-gradation{
-	background-color: rgb(34, 105, 44);
-}
-/* fifth block */
-.accordion__body--people{
-	background-color: rgb(0, 250, 33);
-}
-
-.accordion__body--people::after,
-.accordion__body--people-gradation{
-	background-color: rgb(70, 161, 82);
-}
-
-
-

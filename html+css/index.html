@@ -11,6 +11,7 @@
 	<title>HTML+CSS</title>
 </head>
 <body>
+	
 	<div class="container">
 		<header class="header" id="header">
 			<div class="header__body">
@@ -25,49 +26,72 @@
 			</div>
 		</header>
 	</div>
-	<section class="progress-bar">
-		<progress class="progress-bar__item" max="100" value="25">
-	</section>
+	
 	<main class="content">
 		<section class="content__carusel carusel">
-			<div class="carusel__body">
-				<button class="carusel__btn"></button>
-				<ul class="carusel__list">
-					<li class="carusel__item">
-						<img class="carusel__photo" src="./img/cat1.jpg" alt="cat">
-					</li>
-					<li class="carusel__item">
-						<img class="carusel__photo" src="./img/cat2.jpg" alt="cat">
-					</li>
-					<li class="carusel__item">
-						<img class="carusel__photo" src="./img/cat3.jpg" alt="cat">
-					</li>
-				</ul>
-				<button class="carusel__btn"></button>
+			<input type="radio" id="card0" name="card" checked="checked" class="carusel__input"/>
+			<div class="carusel__block"></div> 
+			
+			<input type="radio" id="card1" name="card" class="carusel__input"/>
+			<div class="carusel__block">
+				<label class="carusel__arrow" for="card0"></label>
+				<div class="carusel__item carusel__item1"></div>
+			</div>
+			
+			<input type="radio" id="card2" name="card" class="carusel__input"/>
+			<div class="carusel__block">
+				<label class="carusel__arrow" for="card1"></label>
+				<div class="carusel__item carusel__item2"></div>
+			</div>
+			
+			<input type="radio" id="card3" name="card" class="carusel__input"/>
+			<div class="carusel__block">
+				<label class="carusel__arrow" for="card2"></label>
+				<div class="carusel__item carusel__item3"></div>
+			</div>
+			
+			<input type="radio" id="card4" name="card" class="carusel__input"/>
+			<div class="carusel__block">
+				<label class="carusel__arrow" for="card3"></label>
+				<div class="carusel__item carusel__item4"></div>
+			</div>
+
+			<input type="radio" id="card5" name="card" class="carusel__input"/>
+			<div class="carusel__block">
+				<label class="carusel__arrow" for="card4"></label>
+				<div class="carusel__item carusel__item5"></div>
+			</div>
+
+			<input type="radio" id="card6" name="card" class="carusel__input"/>
+			<div class="carusel__block">
+				<label class="carusel__arrow" for="card5"></label>
+				<div class="carusel__item carusel__item6"></div>
 			</div>
 		</section>
-	
+		<section class="content__lorem">
+			<h2>Lorem ipsum</h2>
+			<ul>
+				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
+				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
+				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
+				<li>
+					<ul>
+						<li>it amet consectetur</li>
+						<li>it amet consectetur</li>
+						<li>it amet consectetur</li>
+					</ul>
+				</li>
+				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
+			</ul>
+			<img src="https://source.unsplash.com/400x400/?sig=10" alt="">
+		</section>
 		<section class="content__accordion accordion">
-			<div class="accordion__body accordion__body--simple ">
-				<div class="accordion__side accordion__body--simple-gradation">
+			<div class="accordion__body accordion__body--color accordion__body--small" id="bodyOne">
+				<div class="accordion__side accordion__body--color-gradation">
 					<div class="accordion__side-header">
 						<h3 class="accordion__side-title">CSS PRACTICE</h3>
 					</div>
-					<div class="accordion__side-block accordion__body--simple"></div>
-				</div>
-				<div class="accordion__content">
-					<h1 class="accordion__title">Lorem ipsum</h1>
-					<p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Numquam laboriosam ullam temporibus quis facilis! Non, ab rem quisquam, 
-						magnam harum autem dolor accusantium quasi odit eos libero quo reprehenderit et!</p>
-				</div>
-			</div>
-			<div class="accordion__body accordion__body--architecture accordion__body--small">
-				<div class="accordion__side accordion__body--architecture-gradation">
-					<div class="accordion__side-header">
-						<h3 class="accordion__side-title">CSS PRACTICE</h3>
-					</div>
-					<div class="accordion__side-block accordion__body--architecture"></div>
+					<div class="accordion__side-block"></div>
 				</div>
 				<div class="accordion__content accordion__content--hidden">
 					<h1 class="accordion__title">Lorem ipsum</h1>
@@ -76,12 +100,12 @@
 						magnam harum autem dolor accusantium quasi odit eos libero quo reprehenderit et!</p>
 				</div>
 			</div>
-			<div class="accordion__body accordion__body--weather accordion__body--small">
-				<div class="accordion__side accordion__body--weather-gradation">
+			<div class="accordion__body accordion__body--color accordion__body--small">
+				<div class="accordion__side accordion__body--color-gradation">
 					<div class="accordion__side-header">
 						<h3 class="accordion__side-title">CSS PRACTICE</h3>
 					</div>
-					<div class="accordion__side-block accordion__body--weather"></div>
+					<div class="accordion__side-block"></div>
 				</div>
 				<div class="accordion__content accordion__content--hidden">
 					<h1 class="accordion__title">Lorem ipsum</h1>
@@ -90,12 +114,12 @@
 						magnam harum autem dolor accusantium quasi odit eos libero quo reprehenderit et!</p>
 				</div>
 			</div>
-			<div class="accordion__body accordion__body--city accordion__body--small">
-				<div class="accordion__side accordion__body--city-gradation">
+			<div class="accordion__body accordion__body--color accordion__body--small">
+				<div class="accordion__side accordion__body--color-gradation">
 					<div class="accordion__side-header">
 						<h3 class="accordion__side-title">CSS PRACTICE</h3>
 					</div>
-					<div class="accordion__side-block accordion__body--city"></div>
+					<div class="accordion__side-block"></div>
 				</div>
 				<div class="accordion__content accordion__content--hidden">
 					<h1 class="accordion__title">Lorem ipsum</h1>
@@ -104,12 +128,26 @@
 						magnam harum autem dolor accusantium quasi odit eos libero quo reprehenderit et!</p>
 				</div>
 			</div>
-			<div class="accordion__body accordion__body--people accordion__body--small">
-				<div class="accordion__side accordion__body--people-gradation">
+			<div class="accordion__body accordion__body--color accordion__body--small">
+				<div class="accordion__side accordion__body--color-gradation">
 					<div class="accordion__side-header">
 						<h3 class="accordion__side-title">CSS PRACTICE</h3>
 					</div>
-					<div class="accordion__side-block accordion__body--people"></div>
+					<div class="accordion__side-block"></div>
+				</div>
+				<div class="accordion__content accordion__content--hidden">
+					<h1 class="accordion__title">Lorem ipsum</h1>
+					<p class="accordion__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Numquam laboriosam ullam temporibus quis facilis! Non, ab rem quisquam, 
+						magnam harum autem dolor accusantium quasi odit eos libero quo reprehenderit et!</p>
+				</div>
+			</div>
+			<div class="accordion__body accordion__body--color accordion__body--small">
+				<div class="accordion__side accordion__body--color-gradation">
+					<div class="accordion__side-header">
+						<h3 class="accordion__side-title">CSS PRACTICE</h3>
+					</div>
+					<div class="accordion__side-block"></div>
 				</div>
 				<div class="accordion__content accordion__content--hidden">
 					<h1 class="accordion__title">Lorem ipsum</h1>
@@ -136,14 +174,18 @@
 				<label for="form-gender-male" class="form-label">Male</label>
 				<input type="radio" name="gender" id="form-gender-male" required class="form-input">
 
-				<label for="form-gender-male" class="form-label">Female</label>
+				<label for="form-gender-female" class="form-label">Female</label>
 				<input type="radio" name="gender" id="form-gender-female" required class="form-input">
 				<br>
 				<button type="reset" class="form-btn">reset</button>
 				<button type="submit" class="form-btn">submit</button>
 			</form>
 		</section>
-	</main>
+	</main> 
+	<footer class="footer">
+		<span>&#169; Oleh Nikulin</span>
+	</footer>
+	
 	
 </body>
 </html>
