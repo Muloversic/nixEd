@@ -65,6 +65,14 @@ p, ul, ol{
 	transform: translateY(-50%);
 }
 
+.navigation__title{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 100px;
+}
+
 .navigation__list{
 	display: inline-block;
 	position: absolute;
