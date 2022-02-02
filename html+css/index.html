@@ -12,13 +12,13 @@
 </head>
 <body>
 	
-	<div class="container">
-		<header class="header" id="header">
+	<div class="container" id="home">
+		<header class="header" >
 			<div class="header__body">
 				<nav class="header__navigation navigation">
 					<img src="./img/logo.png" alt="logo" class="navigation__logo">
 					<ul class="navigation__list">
-						<li class="navigation__list-item"><a class="navigation__list-link" href="#header">Home</a></li>
+						<li class="navigation__list-item"><a class="navigation__list-link" href="#home">Home</a></li>
 						<li class="navigation__list-item"><a class="navigation__list-link" href="#main">Main</a></li>
 						<li class="navigation__list-item"><a class="navigation__list-link" href="#footer">Footer</a></li>
 					</ul>
@@ -27,7 +27,7 @@
 		</header>
 	</div>
 	
-	<main class="content">
+	<main class="content" id="main">
 		<section class="content__carusel carusel">
 			<input type="radio" id="card0" name="card" checked="checked" class="carusel__input"/>
 			<div class="carusel__block"></div> 
@@ -68,22 +68,22 @@
 				<div class="carusel__item carusel__item6"></div>
 			</div>
 		</section>
-		<section class="content__lorem">
-			<h2>Lorem ipsum</h2>
-			<ul>
-				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
-				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
-				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
-				<li>
-					<ul>
-						<li>it amet consectetur</li>
-						<li>it amet consectetur</li>
-						<li>it amet consectetur</li>
+		<section class="content__lorem lorem">
+			<h2 class="lorem__title">Lorem ipsum</h2>
+			<ul class="lorem__list">
+				<li class="lorem__list-item">accusantium quasi odit eos libero quo reprehenderit et!</li>
+				<li class="lorem__list-item">accusantium quasi odit eos libero quo reprehenderit et!</li>
+				<li class="lorem__list-item">accusantium quasi odit eos libero quo reprehenderit et!</li>
+				<li class="lorem__list-item">
+					<ul class="lorem__list lorem__list--nested">
+						<li class="lorem__list-item">it amet consectetur</li>
+						<li class="lorem__list-item">it amet consectetur</li>
+						<li class="lorem__list-item">it amet consectetur</li>
 					</ul>
 				</li>
-				<li>accusantium quasi odit eos libero quo reprehenderit et!</li>
+				<li class="lorem__list-item">accusantium quasi odit eos libero quo reprehenderit et!</li>
 			</ul>
-			<img src="https://source.unsplash.com/400x400/?sig=10" alt="">
+			<img class="lorem__img" src="https://source.unsplash.com/400x400/?sig=10" alt="img">
 		</section>
 		<section class="content__accordion accordion">
 			<div class="accordion__body accordion__body--color accordion__body--small" id="bodyOne">
@@ -157,8 +157,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="content__form">
-			<form class="accordion__form form">
+		<section class="content__form form">
+			<form class="form__body">
 				<label for="form-name" class="form-label">Your name</label>
 				<input type="text" name="name" id="form-name" placeholder="name" required class="form-input" >
 
@@ -182,7 +182,7 @@
 			</form>
 		</section>
 	</main> 
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<span>&#169; Oleh Nikulin</span>
 	</footer>
 	

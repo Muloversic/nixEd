@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body{
@@ -206,6 +207,12 @@ input:checked+.carusel__block+input+div+input+div .carusel__arrow:before{
 	margin: 4px 0 0 10px;
 }
 
+.lorem,
+.accordion,
+.content__form{
+	margin-left: 15px;
+}
+
 .accordion{
 	margin-top: 20px;
 	margin-bottom: 90px;
@@ -384,7 +391,7 @@ input:checked+.carusel__block+input+div+input+div .carusel__arrow:before{
 	background-color: rgb(70, 161, 82);
 }
 
-.form{
+.form__body{
 	width: 210px;
 	text-align: left;
 
