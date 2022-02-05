@@ -1,0 +1,106 @@
+.grid{
+	display: grid;
+	grid-template-columns:repeat(3, 200px);
+	grid-template-rows: repeat(4, 23%);
+	justify-content: center;
+	column-gap: 10px;
+	row-gap: 10px;
+	margin-bottom: 50px;
+}
+
+.grid div{
+	padding: 30px;
+	border: 1px solid gray;
+}
+
+.orange{
+	background-color: orange;
+	justify-self: end;
+}
+
+.purple{
+	background-color: purple;
+	justify-self: start;
+}
+
+.green{
+	background-color:green;
+	justify-self: center;
+}
+
+.blue{
+	background-color: blue;
+}
+
+
+.grid2{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-rows: repeat(4, 25%);
+	column-gap: 10px;
+	row-gap: 10px;
+}
+
+.grid2 div{
+	padding: 10px 30px;
+	background-color: rgb(112, 112, 112);
+}
+
+.a {
+	grid-column: auto / 2 span;
+}
+
+.g {
+	grid-column: auto / 2 span;
+	grid-row: auto / 2 span;
+}
+
+.k {
+	grid-column: auto / 3 span;
+}
+
+
+.grid3 {
+	display: grid;
+	grid-template-columns: 150px 100px 150px 100px;
+	grid-template-rows: repeat(3, 80px);
+	column-gap: 10px;
+	row-gap: 10px;
+	justify-content: center;
+	margin: 100px 0;
+}
+
+.grid3 div{
+	padding: 10px 30px;
+	background-color: rgb(112, 112, 112);
+}
+
+.grid3__subitemts{
+	grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: subgrid;
+}
+.grid3__subitemts div{
+	background-color: rgb(219, 219, 219);
+}
+.a3 {
+	grid-column: 1 / 3;
+}
+.b3 {
+	grid-column: 4 ;
+}
+.c3 {
+	grid-row: 2 / 4;
+}
+
+.e3 {
+	grid-row: 1 / 3;
+}
+.f3 {
+	grid-column: 2 / 4;
+}
+.g3 {
+	grid-column: 3;
+}
