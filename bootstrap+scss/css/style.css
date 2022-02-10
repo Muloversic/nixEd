@@ -67,7 +67,47 @@
 }
 
 .main {
-  background-color: #bebebe;
+  background-color: #eeeeee;
+  padding: 0 25px;
+}
+
+.main-heading {
+  font-size: 2.5em;
+  color: #585858;
+}
+
+.card-title {
+  font-size: 0.8em;
+}
+
+.card-title-primary {
+  color: #4040ff;
+}
+
+.card-title-success {
+  color: #47b147;
+}
+
+.card-title-aqua {
+  color: #58d3db;
+}
+
+.card-title-warning {
+  color: #dba849;
+}
+
+.progress-bar-custom {
+  background-color: #58d3db;
+}
+
+.card-text-custom {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.bi-card-custom {
+  color: #d4d4d4;
+  font-size: 2em;
 }
 
 @media (max-width: 768px) {
@@ -79,6 +119,9 @@
 @media (min-width: 768px) {
   .bi {
     font-size: 18px;
+  }
+  .bi-card-custom {
+    font-size: 1.5em;
   }
   .nav-component {
     margin-left: 0;
@@ -95,6 +138,9 @@
 }
 
 @media (min-width: 992px) {
+  .bi-card-custom {
+    font-size: 2em;
+  }
   .input-search {
     width: 300px !important;
   }

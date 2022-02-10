@@ -69,12 +69,49 @@
 }
 
 .main{
-	background-color: rgb(190, 190, 190);
+	background-color: rgb(238, 238, 238);
+	padding: 0 25px;
+
+	&-heading{
+		font-size: 2.5em ;
+		color: rgb(88, 88, 88);
+	}
+}
+
+.card-title{
+	font-size: 0.8em;
+	&-primary{
+		color: rgb(64, 64, 255);
+	}
+	&-success{
+		color: rgb(71, 177, 71);
+	}
+	&-aqua{
+		color: rgb(88, 211, 219);
+	}
+	&-warning{
+		color: rgb(219, 168, 73);
+	}
+}
+
+.progress-bar-custom{
+	background-color: rgb(88, 211, 219);
+}
+
+.card-text-custom{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.bi-card-custom{
+	color: rgb(212, 212, 212);
+	font-size: 2em;
 }
 
 @media (max-width:768px) {
 	.custom-container{
 		max-width: 100%;
+		// padding: 0 25px ;
 	}
 }
 
@@ -82,6 +119,11 @@
 	.bi{
 		font-size: 18px;
 	}
+
+	.bi-card-custom{
+		font-size: 1.5em;
+	}
+
 	.nav-component{
 		margin-left: 0;
 	}
@@ -100,6 +142,11 @@
 }
 
 @media (min-width: 992px) { 
+
+	.bi-card-custom{
+		font-size: 2em;
+	}
+
 	.input-search{
 		width: 300px !important;
 	}
@@ -110,3 +157,4 @@
 		width: 500px !important;
 	}
 }
+
