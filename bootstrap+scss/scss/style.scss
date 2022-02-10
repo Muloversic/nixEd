@@ -2,23 +2,38 @@
 .bi{
 	font-size: 25px;
 }
+
 .bi-search{
 	color: #fff;
 }
+
 .profile-photo{
 	width: 45px;	
 	height: 45px;
 	object-fit: cover;
 }
+
 .badge{
 	left: 60%;
 }
+
+.navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(90, 147, 221)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-main{
+	-webkit-box-shadow: -1px 16px 8px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -1px 16px 8px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: -1px 16px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
 .nav-component{
 	margin-left: 20px;
 	&:first-child{
 		margin-left: 0;
 	}
 }
+
 
 .aside{
 	&-header{
@@ -53,6 +68,16 @@
 	}
 }
 
+.main{
+	background-color: rgb(190, 190, 190);
+}
+
+@media (max-width:768px) {
+	.custom-container{
+		max-width: 100%;
+	}
+}
+
 @media (min-width:768px) {
 	.bi{
 		font-size: 18px;
@@ -65,23 +90,21 @@
 	}
 	.navbar-main-list{
 		width: 100% !important;
-		// flex-direction: column;
-		// justify-content: flex-start;
 	}
 
 	.aside{
 		&-header__title{
 			font-size: 18px;
 		}
-		// width: 100% !important;
-		
 	}
 }
+
 @media (min-width: 992px) { 
 	.input-search{
 		width: 300px !important;
 	}
 }
+
 @media (min-width:1200px) {
 	.input-search{
 		width: 500px !important;
