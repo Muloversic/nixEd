@@ -14,7 +14,7 @@
 <body>
 	<div class="container custom-container">
 		<div class="row ">
-			<div class="col-md-3 d-flex p-0">
+			<div class="col-md-2 d-flex p-0">
 				<div class="collapse navbar-collapse d-md-flex bg-primary pt-3" id="navbarSupportedContent">
 					<aside class="d-flex flex-column aside">
 						<div class="aside-header d-flex justify-content-center align-items-center">
@@ -31,7 +31,7 @@
 					</aside>
 				</div>
 			</div>
-			<div class="col-md-9 p-0">
+			<div class="col-md-10 p-0">
 				<nav class="navbar navbar-expand-md navbar-light bg-light navbar-main align-items-baseline">
 					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
 					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,11 @@
 				</nav>
 
 				<main class="main pt-4 pb-4">
-					<h1 class="display-1 main-heading">Goals</h1>
+					<div class="mt-2 mb-4 d-flex justify-content-between align-items-center">
+						<h1 class="display-1 main-heading">Goals</h1>
+						<button type="button" class="btn btn-primary d-none d-md-block bi bi-download main-btn">Generate Report</button>
+					</div>
+					
 					<div class="row">
 						<div class="col-12 col-md-6 d-flex">
 							<div class="card text-black mb-3 w-100 flex-row align-items-center pr-3">
@@ -108,8 +112,40 @@
 							</div>
 						</div>
 					</div>
-				
+					<div class="row todo m-1 p-3 rounded">
+						<h2 class="todo-title ">Todo List</h2>
+						<div class="col-12 d-flex border-bottom border-top p-0">
+							<div class="form-check form-check-inline w-100 justify-content-between">
+								<div class="d-flex flex-column pt-2 pb-2">
+									<label class="form-check-label todo-name" for="inlineCheckbox1">Lunch meeting</label>
+									<span class="todo-time">10:30 AM</span>
+								</div>
+								<input class="form-check-input todo-checkbox" type="checkbox" id="inlineCheckbox1" value="option1">
+							</div>
+						</div>
+						<div class="col-12 d-flex border-bottom  p-0">
+							<div class="form-check form-check-inline w-100 justify-content-between">
+								<div class="d-flex flex-column pt-2 pb-2">
+									<label class="form-check-label todo-name" for="inlineCheckbox2">Lunch meeting</label>
+									<span class="todo-time">11:30 AM</span>
+								</div>
+								<input class="form-check-input todo-checkbox" type="checkbox" id="inlineCheckbox2" value="option2">
+							</div>
+						</div>
+						<div class="col-12 d-flex p-0">
+							<div class="form-check form-check-inline w-100 justify-content-between">
+								<div class="d-flex flex-column pt-2 pb-2">
+									<label class="form-check-label todo-name" for="inlineCheckbox3">Lunch meeting</label>
+									<span class="todo-time">12:30 AM</span>
+								</div>
+								<input class="form-check-input todo-checkbox" type="checkbox" id="inlineCheckbox3" value="option3">
+							</div>
+						</div>
+					</div>
 				</main>
+				<footer class="footer d-flex justify-content-center align-items-end">
+					<span class="footer-info">Copyryght &#169; Nix Student 2022</span>
+				</footer>
 			</div>
 		</div>
 	</div>
@@ -121,5 +157,6 @@
 	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
 	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
 </body>
 </html>

@@ -76,6 +76,14 @@
 		font-size: 2.5em ;
 		color: rgb(88, 88, 88);
 	}
+
+	&-btn{
+		height: 40px;
+		&::before{
+			padding-right: 10px;
+			color: rgb(192, 192, 192);
+		}
+	}
 }
 
 .card-title{
@@ -108,10 +116,52 @@
 	font-size: 2em;
 }
 
+.todo{
+	background-color: #fff;
+	-webkit-box-shadow: 2px -10px 38px 5px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 2px -10px 38px 5px rgba(0, 0, 0, 0.05);
+	box-shadow: 2px -10px 38px 5px rgba(0, 0, 0, 0.05);
+	&-title{
+		color: rgb(64, 64, 255);
+		font-size: 1em;
+	}
+
+	&-name{
+		font-weight: 600;
+	}
+
+	&-time{
+		font-size: 0.8em;
+	}
+
+	&-checkbox {
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		border-radius: 20%;
+		border: 2px solid #ddd;
+		appearance: none;
+		-webkit-appearance: none;
+		outline: none;
+		cursor: pointer;
+		&:checked {
+			background-color: gray;
+		}
+	}
+}
+
+.footer{
+	background-color: rgb(238, 238, 238);
+	padding: 80px 0 20px 0;
+	&-info{
+		font-size: .8em;
+		color: rgb(138, 138, 138);
+	}
+}
+
 @media (max-width:768px) {
 	.custom-container{
 		max-width: 100%;
-		// padding: 0 25px ;
 	}
 }
 
