@@ -5,12 +5,14 @@
 *{
 	scroll-behavior: smooth;
 }
-.bi{
-	font-size: 25px;
-}
+
 html,
 body {
 	height: 100%;
+}
+
+.bi{
+	font-size: 25px;
 }
 .bi-search{
 	color: #fff;
@@ -93,6 +95,10 @@ body {
 	background-color: rgb(88, 211, 219);
 }
 
+.popover-header{
+	line-height: 1.8em;
+}
+
 .link-home{
 	bottom: 10%;
 	right: 10%;
@@ -111,6 +117,7 @@ body {
 	@media (min-width:882px) {
 		right: 14%;
 	}
+
 	@media (min-width:1300px) {
 		right: 21%;
 	}
@@ -123,10 +130,6 @@ body {
 		font-size: .8em;
 		color: rgb(138, 138, 138);
 	}
-}
-
-@media (min-width:425px) {
-	
 }
 
 @media (max-width:768px) {
@@ -148,9 +151,11 @@ body {
 	.nav-component{
 		margin-left: 0;
 	}
+
 	.input-search{
 		width: 150px !important;
 	}
+
 	.navbar-main-list{
 		width: 100% !important;
 	}
@@ -163,7 +168,6 @@ body {
 }
 
 @media (min-width: 992px) { 
-
 	.bi-card-custom{
 		font-size: 2em;
 	}

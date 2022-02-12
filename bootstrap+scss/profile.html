@@ -9,7 +9,6 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="css/profile.css"> -->
 	<title>Profile</title>
 </head>
 <body>
@@ -20,7 +19,9 @@
 					<aside class="d-flex flex-column aside">
 						<div class="aside-header d-flex justify-content-center align-items-center">
 							<i class="bi bi-emoji-smile aside-header__img"></i>
-							<h1 class="text-uppercase aside-header__title mb-md-0">brand</h1>
+							<!-- POPOVER -->
+							<h1 class="text-uppercase aside-header__title mb-md-0" data-toggle="popover" 
+							data-content="Your brand" title="Brand">brand</h1>
 						</div>
 						<nav class="aside-nav navbar p-md-1 p-lg-4">
 							<ul class="aside-nav__list">
@@ -59,7 +60,9 @@
 						</li>
 						<li class="nav-component">
 							<span class="img-descr d-md-inline d-none">Nix Student</span>
-							<img src="img/me.jpg" alt="profile-photo" class="rounded-circle profile-photo nav-component">
+							<!-- POPOVER -->
+							<img src="img/me.jpg" alt="profile-photo" class="rounded-circle profile-photo nav-component" data-toggle="popover" 
+							data-content="Your photo" title="Picture">
 						</li>
 					</ul>
 				</nav>

@@ -197,13 +197,13 @@
   scroll-behavior: smooth;
 }
 
-.bi {
-  font-size: 25px;
-}
-
 html,
 body {
   height: 100%;
+}
+
+.bi {
+  font-size: 25px;
 }
 
 .bi-search {
@@ -284,6 +284,10 @@ body {
 
 .progress-bar-custom {
   background-color: #58d3db;
+}
+
+.popover-header {
+  line-height: 1.8em;
 }
 
 .link-home {

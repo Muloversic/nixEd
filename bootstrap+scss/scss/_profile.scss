@@ -9,6 +9,7 @@
 	@media (min-width:766px) {
 		font-size: 1.3em;
 	}
+	
 	@media (min-width:992px) {
 		font-size: 2em;
 	}
@@ -21,15 +22,18 @@
 		@media (min-width:766px) {
 			font-size: .8em;
 		}
+
 		@media (min-width:992px) {
 			font-size: 1em;
 		}
 	}
+
 	&-progress{
 		color: rgb(92, 92, 92);
 		@media (min-width:766px) {
 			font-size: .8em;
 		}
+
 		@media (min-width:992px) {
 			font-size: 1em;
 		}
