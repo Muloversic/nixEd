@@ -1,0 +1,73 @@
+.main-btn {
+  height: 40px;
+}
+
+.main-btn::before {
+  padding-right: 10px;
+  color: silver;
+}
+
+.card-title {
+  font-size: 0.8em;
+}
+
+.card-title-primary {
+  color: #4040ff;
+}
+
+.card-title-success {
+  color: #47b147;
+}
+
+.card-title-aqua {
+  color: #58d3db;
+}
+
+.card-title-warning {
+  color: #dba849;
+}
+
+.card-text-custom {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.bi-card-custom {
+  color: #d4d4d4;
+  font-size: 2em;
+}
+
+.todo {
+  background-color: #fff;
+  box-shadow: 2px -10px 38px 5px rgba(0, 0, 0, 0.05);
+}
+
+.todo-title {
+  color: #4040ff;
+  font-size: 1em;
+}
+
+.todo-name {
+  font-weight: 600;
+}
+
+.todo-time {
+  font-size: 0.8em;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 20%;
+  border: 2px solid #ddd;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.todo-checkbox:checked {
+  background-color: gray;
+}

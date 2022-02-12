@@ -1,0 +1,68 @@
+.main{
+	&-btn{
+		height: 40px;
+		&::before{
+			padding-right: 10px;
+			color: rgb(192, 192, 192);
+		}
+	}
+}
+.card-title{
+	font-size: 0.8em;
+	&-primary{
+		color: rgb(64, 64, 255);
+	}
+	&-success{
+		color: rgb(71, 177, 71);
+	}
+	&-aqua{
+		color: rgb(88, 211, 219);
+	}
+	&-warning{
+		color: rgb(219, 168, 73);
+	}
+}
+
+.card-text-custom{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.bi-card-custom{
+	color: rgb(212, 212, 212);
+	font-size: 2em;
+}
+
+.todo{
+	background-color: #fff;
+	-webkit-box-shadow: 2px -10px 38px 5px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 2px -10px 38px 5px rgba(0, 0, 0, 0.05);
+	box-shadow: 2px -10px 38px 5px rgba(0, 0, 0, 0.05);
+	&-title{
+		color: rgb(64, 64, 255);
+		font-size: 1em;
+	}
+
+	&-name{
+		font-weight: 600;
+	}
+
+	&-time{
+		font-size: 0.8em;
+	}
+
+	&-checkbox {
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		border-radius: 20%;
+		border: 2px solid #ddd;
+		appearance: none;
+		-webkit-appearance: none;
+		outline: none;
+		cursor: pointer;
+		&:checked {
+			background-color: gray;
+		}
+	}
+}
