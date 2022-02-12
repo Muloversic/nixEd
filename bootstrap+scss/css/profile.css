@@ -1,0 +1,19 @@
+.profile-img {
+  width: 190px;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homeworks-title {
+  color: #4686c2;
+}
+
+.homeworks-name {
+  font-size: 1em;
+  color: #5c5c5c;
+}
+
+.homeworks-progress {
+  color: #5c5c5c;
+}
