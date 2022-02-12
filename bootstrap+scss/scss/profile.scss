@@ -4,15 +4,23 @@
 	object-fit: cover;
 }
 
+.profile-type-title{
+	color: rgb(70, 134, 194);
+}
+
 .homeworks{
-	&-title{
-		color: rgb(70, 134, 194);
-	}
 	&-name{
 		font-size: 1em;
 		color: rgb(92, 92, 92);
 	}
 	&-progress{
 		color: rgb(92, 92, 92);
+	}
+}
+
+.form{
+	&-label{
+		color: rgb(92, 92, 92);
+		font-weight: 600;
 	}
 }

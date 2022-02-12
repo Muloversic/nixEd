@@ -5,7 +5,7 @@
      object-fit: cover;
 }
 
-.homeworks-title {
+.profile-type-title {
   color: #4686c2;
 }
 
@@ -16,4 +16,9 @@
 
 .homeworks-progress {
   color: #5c5c5c;
+}
+
+.form-label {
+  color: #5c5c5c;
+  font-weight: 600;
 }
