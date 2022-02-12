@@ -9,11 +9,11 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>Goals</title>
 </head>
 <body>
-	<div class="container custom-container">
-		<div class="row ">
+	<div class="container custom-container h-100 d-flex flex-column">
+		<div class="row h-100">
 			<div class="col-md-2 d-flex p-0">
 				<div class="collapse navbar-collapse d-md-flex bg-primary pt-3" id="navbarSupportedContent">
 					<aside class="d-flex flex-column aside">
@@ -31,13 +31,13 @@
 					</aside>
 				</div>
 			</div>
-			<div class="col-md-10 p-0">
+			<div class="col-md-10 p-0 d-flex flex-column">
 				<nav class="navbar navbar-expand-md navbar-light bg-light navbar-main align-items-baseline">
 					<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
 					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<ul class="d-flex align-items-baseline justify-content-md-between navbar-main-list mb-0 mt-2">
+					<ul class="d-flex align-items-baseline justify-content-md-between navbar-main-list mb-0 mt-2" id="home">
 						<li class="nav-component">
 							<form class="form-inline my-2 my-lg-0">
 								<div class="input-group mb-3">
@@ -62,7 +62,6 @@
 						</li>
 					</ul>
 				</nav>
-
 				<main class="main pt-4 pb-4">
 					<div class="mt-2 mb-4 d-flex justify-content-between align-items-center">
 						<h1 class="display-1 main-heading">Goals</h1>
@@ -142,10 +141,13 @@
 							</div>
 						</div>
 					</div>
+					
 				</main>
 				<footer class="footer d-flex justify-content-center align-items-end">
 					<span class="footer-info">Copyryght &#169; Nix Student 2022</span>
 				</footer>
+				<a href="#home" class="bi bi-chevron-up link-home position-fixed"></a>
+				
 			</div>
 		</div>
 	</div>
