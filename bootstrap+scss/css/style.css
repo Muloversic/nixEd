@@ -343,10 +343,10 @@ body {
     margin-left: 0;
   }
   .input-search {
-    width: 150px !important;
+    width: 150px;
   }
   .navbar-main-list {
-    width: 100% !important;
+    width: 100%;
   }
   .aside-header__title {
     font-size: 18px;
