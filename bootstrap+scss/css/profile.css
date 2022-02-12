@@ -9,13 +9,49 @@
   color: #4686c2;
 }
 
+@media (min-width: 766px) {
+  .profile-type-title {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-type-title {
+    font-size: 2em;
+  }
+}
+
 .homeworks-name {
   font-size: 1em;
   color: #5c5c5c;
 }
 
+@media (min-width: 766px) {
+  .homeworks-name {
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 992px) {
+  .homeworks-name {
+    font-size: 1em;
+  }
+}
+
 .homeworks-progress {
   color: #5c5c5c;
+}
+
+@media (min-width: 766px) {
+  .homeworks-progress {
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 992px) {
+  .homeworks-progress {
+    font-size: 1em;
+  }
 }
 
 .form-label {
