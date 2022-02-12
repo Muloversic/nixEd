@@ -145,13 +145,13 @@
   flex: 1 0 auto;
 }
 
-.foo {
+.img-container {
   padding: 24.8% 0;
   overflow: hidden;
   position: relative;
 }
 
-.foo img {
+.img-container img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -164,28 +164,25 @@
 .form-control-registration,
 .bnt-reg {
   border-radius: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
+  font-size: 1.2rem !important;
 }
 
 .btn-primary-dark {
   background-color: #3d46c4;
   color: #fff;
-  font-size: inherit;
 }
 
 .btn-primary-dark::before {
-  font-size: 1rem;
   margin: 0 5px 0 0;
 }
 
 .btn-google {
   background-color: #e44f35;
   color: #fff;
-  font-size: inherit;
 }
 
 .btn-google::before {
-  font-size: 1rem;
   margin: 0 5px 0 0;
 }
 
