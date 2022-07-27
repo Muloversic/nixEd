@@ -322,7 +322,7 @@ body {
 }
 
 .footer-info {
-  font-size: .8em;
+  font-size: 0.8em;
   color: #8a8a8a;
 }
 
@@ -366,4 +366,14 @@ body {
   .input-search {
     width: 500px !important;
   }
+}
+
+.scroll-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 6px;
+  background: #5cc2fd;
+  z-index: 10;
 }
