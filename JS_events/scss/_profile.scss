@@ -1,0 +1,48 @@
+.profile-img{
+	width: 190px;
+	height: 190px;
+	object-fit: cover;
+}
+
+.profile-type-title{
+	color: rgb(70, 134, 194);
+	@media (min-width:766px) {
+		font-size: 1.3em;
+	}
+	
+	@media (min-width:992px) {
+		font-size: 2em;
+	}
+}
+
+.homeworks{
+	&-name{
+		font-size: 1em;
+		color: rgb(92, 92, 92);
+		@media (min-width:766px) {
+			font-size: .8em;
+		}
+
+		@media (min-width:992px) {
+			font-size: 1em;
+		}
+	}
+
+	&-progress{
+		color: rgb(92, 92, 92);
+		@media (min-width:766px) {
+			font-size: .8em;
+		}
+
+		@media (min-width:992px) {
+			font-size: 1em;
+		}
+	}
+}
+
+.form{
+	&-label{
+		color: rgb(92, 92, 92);
+		font-weight: 600;
+	}
+}
