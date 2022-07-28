@@ -92,7 +92,7 @@ switchButton.addEventListener('click', (e) => {
   }
 });
 
-//TASK 4 Prevent copy
+//TASK 4 Prevent copy and dev tools
 const noselect = () => false;
 document.ondragstart = noselect;
 document.onselectstart = noselect;
