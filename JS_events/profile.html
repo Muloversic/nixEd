@@ -203,28 +203,34 @@
                 <div class="col-12 col-md-8 order-md-2 settings mt-3 mt-md-0 d-flex">
                   <div class="card w-100 pl-3 pr-3">
                     <h2 class="profile-type-title pb-3 border-bottom text-capitalize mt-3">user settings</h2>
-                    <form class="mb-4">
+                    <form class="mb-4" id="userSettings">
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputUserName" class="form-label">Username</label>
-                          <input type="text" class="form-control" id="inputUserName" placeholder="user.name" />
+                          <input type="text" class="form-control" id="inputUserName" placeholder="user.name" required />
                         </div>
                         <div class="form-group col-md-6">
                           <label for="inputUserEmail" class="form-label">Email Adress</label>
-                          <input type="email" class="form-control" id="inputUserEmail" placeholder="user@example.com" />
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="inputUserEmail"
+                            placeholder="user@example.com"
+                            required
+                          />
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputUserFirstName" class="form-label">First Name</label>
-                          <input type="text" class="form-control" id="inputUserFirstName" placeholder="John" />
+                          <input type="text" class="form-control" id="inputUserFirstName" placeholder="John" required />
                         </div>
                         <div class="form-group col-md-6">
                           <label for="inputUserLastName" class="form-label">Last Name</label>
-                          <input type="text" class="form-control" id="inputUserLastName" placeholder="Doe" />
+                          <input type="text" class="form-control" id="inputUserLastName" placeholder="Doe" required />
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-primary">Save settings</button>
+                      <button type="submit" class="btn btn-primary" id="submitSettings">Save settings</button>
                     </form>
                   </div>
                 </div>
