@@ -61,7 +61,7 @@ userSettingsFormInput.forEach((input) =>
 
 submitForm.addEventListener('click', () => {
   let isShow = true;
-  for (data in userDataSettings) {
+  for (let data in userDataSettings) {
     if (!userDataSettings[data]) {
       isShow = false;
       alert(`enter data: ${data}`);
