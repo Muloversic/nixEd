@@ -313,6 +313,10 @@ body {
   color: #fff;
 }
 
+.main.theme-dark .homeworks-progress {
+  color: #fff;
+}
+
 .progress-bar-custom {
   background-color: #58d3db;
 }

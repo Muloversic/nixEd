@@ -124,6 +124,10 @@ body {
   .homeworks-name {
     color: $white;
   }
+
+  .homeworks-progress {
+    color: $white;
+  }
 }
 
 .progress-bar-custom {
@@ -248,9 +252,5 @@ body {
   .switched {
     background-color: #000;
     color: $white;
-  }
-  &-light {
-  }
-  &-dark {
   }
 }
