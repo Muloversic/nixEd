@@ -91,3 +91,19 @@ switchButton.addEventListener('click', (e) => {
     itemsToSwitch.forEach((item) => item.classList.remove('theme-dark'));
   }
 });
+
+//TASK 4 Prevent copy
+const noselect = () => false;
+document.ondragstart = noselect;
+document.onselectstart = noselect;
+document.oncontextmenu = noselect;
+
+document.addEventListener('keydown', function (event) {
+  if (
+    (event.ctrlKey && event.code == 'KeyU') ||
+    (event.ctrlKey && event.shiftKey && event.code == 'KeyI') ||
+    event.code == 'F12'
+  ) {
+    event.preventDefault();
+  }
+});
