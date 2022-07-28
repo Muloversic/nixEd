@@ -17,7 +17,11 @@
   </head>
   <body>
     <div class="scroll-bar"></div>
-    <div class="container custom-container h-100 d-flex flex-column">
+    <div class="theme">
+      <span class="theme-light switched">Light</span>
+      <span class="theme-dark">Dark</span>
+    </div>
+    <div class="container custom-container h-100 d-flex flex-column" data-theme="switch">
       <div class="row h-100">
         <div class="col-md-2 d-flex p-0">
           <div
@@ -52,7 +56,7 @@
           </div>
         </div>
         <div class="col-md-10 p-0 d-flex flex-column">
-          <nav class="navbar navbar-expand-md navbar-light bg-light navbar-main align-items-baseline">
+          <nav class="navbar navbar-expand-md navbar-light bg-light navbar-main align-items-baseline" data-theme="switch">
             <button
               class="navbar-toggler border-0"
               type="button"
@@ -81,15 +85,15 @@
                   </div>
                 </form>
               </li>
-              <li class="nav-component position-relative">
+              <li class="nav-component position-relative" data-theme="switch">
                 <i class="bi bi-bell nav-component"></i>
                 <span class="badge badge-danger badge-pill position-absolute">14</span>
               </li>
-              <li class="nav-component position-relative">
+              <li class="nav-component position-relative" data-theme="switch">
                 <i class="bi bi-envelope nav-component"></i>
                 <span class="badge badge-danger badge-pill position-absolute">14</span>
               </li>
-              <li class="nav-component">
+              <li class="nav-component" data-theme="switch">
                 <span class="img-descr d-md-inline d-none">Nix Student</span>
                 <!-- POPOVER -->
                 <img
@@ -103,11 +107,11 @@
               </li>
             </ul>
           </nav>
-          <main class="main pt-4 pb-4">
+          <main class="main pt-4 pb-4" data-theme="switch">
             <div class="border-bottom pb-5">
               <h1 class="display-1 main-heading mb-5 mt-4">Profile</h1>
               <div class="row">
-                <div class="col-12 col-md-4 d-flex">
+                <div class="col-12 col-md-4 main-card d-flex">
                   <div class="card justify-content-center align-items-center w-100" style="width: 18rem">
                     <img class="card-img-top rounded-circle profile-img p-3" src="img/me.jpg" alt="Card image cap" />
                     <div class="card-body">
@@ -115,7 +119,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-4 order-md-3 homeworks mt-3 d-flex">
+                <div class="col-12 col-md-4 order-md-3 main-card mt-3 d-flex">
                   <div class="card w-100 pl-3 pr-3">
                     <h2 class="profile-type-title pb-5 border-bottom text-capitalize mt-3">homeworks</h2>
                     <div class="mb-3">
@@ -200,9 +204,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-8 order-md-2 settings mt-3 mt-md-0 d-flex">
+                <div class="col-12 col-md-8 order-md-2 main-card mt-3 mt-md-0 d-flex">
                   <div class="card w-100 pl-3 pr-3">
-                    <h2 class="profile-type-title pb-3 border-bottom text-capitalize mt-3">user settings</h2>
+                    <h2 class="profile-type-title pb-3 border-bottom text-capitalize mt-3" data-theme="switch">
+                      user settings
+                    </h2>
                     <form class="mb-4" id="userSettings">
                       <div class="form-row">
                         <div class="form-group col-md-6">
@@ -234,7 +240,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-12 col-md-8 order-md-4 settings mt-3 d-flex">
+                <div class="col-12 col-md-8 order-md-4 main-card mt-3 d-flex">
                   <div class="card w-100 pl-3 pr-3">
                     <h2 class="profile-type-title pb-3 border-bottom text-capitalize mt-3">contact settings</h2>
                     <form class="mb-4">
@@ -261,7 +267,7 @@
               </div>
             </div>
           </main>
-          <footer class="footer d-flex justify-content-center align-items-end">
+          <footer class="footer d-flex justify-content-center align-items-end" data-theme="switch">
             <span class="footer-info">Copyryght &#169; Nix Student 2022</span>
           </footer>
           <a href="#home" class="bi bi-chevron-up link-home position-fixed"></a>

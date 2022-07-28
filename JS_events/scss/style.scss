@@ -2,6 +2,7 @@
 @import '_goals.scss';
 @import '_profile.scss';
 @import '_registration.scss';
+@import '_variables.scss';
 * {
   scroll-behavior: smooth;
 }
@@ -15,7 +16,7 @@ body {
   font-size: 25px;
 }
 .bi-search {
-  color: #fff;
+  color: $white;
 }
 
 .profile-photo {
@@ -32,11 +33,20 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(90, 147, 221)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
+.navbar-main.theme-dark {
+  background-color: $nav-bgc-dark !important;
+}
+
 .navbar-main {
   flex: 0 0 auto;
   -webkit-box-shadow: -1px 16px 8px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -1px 16px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -1px 16px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav-component.theme-dark {
+  background-color: $nav-bgc-dark;
+  color: $white;
 }
 
 .nav-component {
@@ -48,7 +58,7 @@ body {
 
 .aside {
   &-header {
-    color: #fff;
+    color: $white;
     &__img {
       font-size: 30px;
       transform: rotate(-20deg);
@@ -62,7 +72,7 @@ body {
 
   &-nav {
     &__list {
-      color: rgb(192, 192, 192);
+      color: $secondary-2;
     }
 
     &__link {
@@ -73,7 +83,7 @@ body {
     &__item {
       margin-top: 25px;
       &--active {
-        color: #fff;
+        color: $white;
       }
     }
   }
@@ -81,12 +91,38 @@ body {
 
 .main {
   flex: 1 0 auto;
-  background-color: rgb(238, 238, 238);
+  background-color: $bg-content !important;
   padding: 0 25px;
   padding-bottom: 100px;
   &-heading {
     font-size: 2.5em;
-    color: rgb(88, 88, 88);
+    color: $secondary-3;
+  }
+}
+
+.main.theme-dark {
+  background-color: $bg-content-dark !important;
+  .main-card {
+    .card {
+      background-color: $card-bg-dark !important;
+    }
+  }
+
+  .main-heading {
+    color: $white;
+  }
+
+  .form-label {
+    color: $white;
+  }
+
+  .profile-type-title {
+    color: $white;
+    background-color: $card-bg-dark;
+  }
+
+  .homeworks-name {
+    color: $white;
   }
 }
 
@@ -101,13 +137,13 @@ body {
 .link-home {
   bottom: 10%;
   right: 10%;
-  color: #fff;
+  color: $white;
   border-radius: 20%;
   width: 30px;
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background-color: rgba(189, 189, 189, 0.795);
+  background-color: $bg-link;
   &::before {
     font-size: 0.7em;
     padding-bottom: 20px;
@@ -122,12 +158,16 @@ body {
   }
 }
 
+.footer.theme-dark {
+  background-color: $bg-content-dark;
+}
+
 .footer {
-  background-color: rgb(238, 238, 238);
+  background-color: $bg-content;
   padding: 80px 0 20px 0;
   &-info {
     font-size: 0.8em;
-    color: rgb(138, 138, 138);
+    color: $footer-text;
   }
 }
 
@@ -189,4 +229,28 @@ body {
   height: 6px;
   background: rgb(92, 194, 253);
   z-index: 10;
+}
+
+.theme {
+  position: fixed;
+  margin-right: 20px;
+  right: 0;
+  top: 6px;
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  span {
+    cursor: pointer;
+    padding: 4px 10px;
+  }
+
+  .switched {
+    background-color: #000;
+    color: $white;
+  }
+  &-light {
+  }
+  &-dark {
+  }
 }

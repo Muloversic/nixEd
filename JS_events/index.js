@@ -72,3 +72,22 @@ submitForm.addEventListener('click', () => {
     window.open('about:blank').alert(`${JSON.stringify(userDataSettings)}`);
   }
 });
+
+//TASK 3 Dark\Light switcher
+const switchButton = document.querySelector('.theme');
+const itemsToSwitch = document.querySelectorAll('[data-theme="switch"]');
+switchButton.addEventListener('click', (e) => {
+  const light = [...e.target.classList].includes('theme-light');
+  const dark = [...e.target.classList].includes('theme-dark');
+  if (dark) {
+    [...switchButton.children].forEach((item) => item.classList.remove('switched'));
+    e.target.classList.add('switched');
+    itemsToSwitch.forEach((item) => item.classList.add('theme-dark'));
+  }
+
+  if (light) {
+    [...switchButton.children].forEach((item) => item.classList.remove('switched'));
+    e.target.classList.add('switched');
+    itemsToSwitch.forEach((item) => item.classList.remove('theme-dark'));
+  }
+});
