@@ -149,3 +149,17 @@ if (sUsrAg.indexOf('Firefox') > -1) {
 }
 
 infoBlock.textContent = userBrowser;
+
+//TASK 7 Smooth scroll js
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+for (let anchor of anchors) {
+  anchor.addEventListener('click', (e) => {
+    e.preventDefault();
+    const scrollTo = anchor.getAttribute('href').substr(1);
+    document.querySelector(`#${scrollTo}`).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+}

@@ -190,10 +190,6 @@
   text-decoration: underline;
 }
 
-* {
-  scroll-behavior: smooth;
-}
-
 html,
 body {
   height: 100%;
