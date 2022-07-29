@@ -93,20 +93,20 @@ switchButton.addEventListener('click', (e) => {
 });
 
 //TASK 4 Prevent copy and dev tools
-// const noselect = () => false;
-// document.ondragstart = noselect;
-// document.onselectstart = noselect;
-// document.oncontextmenu = noselect;
+const noselect = () => false;
+document.ondragstart = noselect;
+document.onselectstart = noselect;
+document.oncontextmenu = noselect;
 
-// document.addEventListener('keydown', function (event) {
-//   if (
-//     (event.ctrlKey && event.code == 'KeyU') ||
-//     (event.ctrlKey && event.shiftKey && event.code == 'KeyI') ||
-//     event.code == 'F12'
-//   ) {
-//     event.preventDefault();
-//   }
-// });
+document.addEventListener('keydown', function (event) {
+  if (
+    (event.ctrlKey && event.code == 'KeyU') ||
+    (event.ctrlKey && event.shiftKey && event.code == 'KeyI') ||
+    event.code == 'F12'
+  ) {
+    event.preventDefault();
+  }
+});
 
 //TASK 5 Wake up user
 const wakeupButtons = document.querySelector('.wakeup-buttons');
