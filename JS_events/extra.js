@@ -40,12 +40,12 @@ buttonCancle.addEventListener('click', (e) => {
 });
 
 //TASK 3
-const weekDays = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+const weekDays = ['Понеділок', 'Вівторок', 'Среда', 'Четверг', "П'ятниця", 'Субота', 'Неділя'];
 const getCurrentDay = (weekDays) => {
   const today = new Date().getDay();
-  let currentDay = '';
-  weekDays.forEach((day, index) => (index + 1 === today ? (currentDay = day) : ''));
-  return currentDay;
+  let result = '';
+  weekDays.forEach((day, index) => (index + 1 === today ? (result = `${day} мае номер ${index + 1}`) : ''));
+  return result;
 };
 
 console.log(getCurrentDay(weekDays));
