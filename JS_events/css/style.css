@@ -480,3 +480,10 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+.browser-info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 23px;
+}

@@ -128,3 +128,24 @@ function checkUserPresence() {
   counter++;
   if (counter >= timer) notification.classList.remove('hidden');
 }
+
+//TASK 6 Browser info
+const infoBlock = document.querySelector('.browser-info');
+const sUsrAg = navigator.userAgent;
+let userBrowser;
+//The order matters here, and this may report false positives for unlisted browsers.
+if (sUsrAg.indexOf('Firefox') > -1) {
+  userBrowser = `Назва: Mozilla Firefox, версія: ${sUsrAg.split('Firefox/')[1]}`;
+} else if (sUsrAg.indexOf('OPR') > -1) {
+  userBrowser = `Назва: Opera, версія: ${sUsrAg.split('OPR/')[1]}`;
+} else if (sUsrAg.indexOf('Edge') > -1) {
+  userBrowser = `Назва: Edge, версія: ${sUsrAg.split('Edge/')[1]}`;
+} else if (sUsrAg.indexOf('Chrome') > -1) {
+  userBrowser = `Назва: Google Chrome or Chromium', версія: ${sUsrAg.split('Chrome/')[1].split('Safari')[0]}`;
+} else if (sUsrAg.indexOf('Safari') > -1) {
+  userBrowser = `Назва: Apple Safari', версія:${sUsrAg.split('Safari/')[1]}`;
+} else {
+  userBrowser = 'unknown';
+}
+
+infoBlock.textContent = userBrowser;
