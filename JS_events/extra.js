@@ -38,3 +38,14 @@ buttonCancle.addEventListener('click', (e) => {
   e.preventDefault();
   magicLink.onclick = false;
 });
+
+//TASK 3
+const weekDays = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+const getCurrentDay = (weekDays) => {
+  const today = new Date().getDay();
+  let currentDay = '';
+  weekDays.forEach((day, index) => (index + 1 === today ? (currentDay = day) : ''));
+  return currentDay;
+};
+
+console.log(getCurrentDay(weekDays));
