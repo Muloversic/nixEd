@@ -8,7 +8,6 @@ const moveDiv = () => {
     counter += 1;
     divToMove.style.left = counter + '%';
     const currentPosition = divToMove.getBoundingClientRect().left + divToMove.clientWidth + initalPosition;
-    console.log(divToMove.getBoundingClientRect());
     if (currentPosition >= window.innerWidth) {
       counter = 0;
     }
@@ -49,3 +48,37 @@ const getCurrentDay = (weekDays) => {
 };
 
 console.log(getCurrentDay(weekDays));
+
+//TASK 4
+const out4 = document.querySelector('.task4');
+const userAnswer = prompt('Enter a message', '');
+const userAnswerArr = userAnswer.split(' ');
+if (userAnswer) {
+  let aCounter = 0;
+  for (let i = 0; i < userAnswer.length; i++) {
+    const letter = userAnswer[i];
+    if (letter === 'a') aCounter++;
+  }
+
+  const changedArr = userAnswerArr.map((word, index) => {
+    if (index === 0) {
+      return word.toUpperCase();
+    } else if (index === userAnswerArr.length - 1) {
+      return word.toLowerCase();
+    } else if (index === userAnswerArr.length - 2) {
+      return word.toLowerCase();
+    } else {
+      return word;
+    }
+  });
+
+  const ul = document.createElement('ul');
+  changedArr.forEach((word) => {
+    const li = document.createElement('li');
+    li.textContent = word;
+    ul.append(li);
+  });
+
+  out4.append(ul);
+  alert(aCounter);
+}
