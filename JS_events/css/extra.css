@@ -1,6 +1,54 @@
+.title {
+  font-size: 40px;
+  color: coral;
+}
+
 .task1 {
   position: relative;
   width: 80px;
   height: 80px;
   background-color: #ecb0b0;
+}
+
+.task2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.task2-link {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+.task2-link:hover {
+  background-color: #b6faf6;
+}
+
+.task2-div {
+  border: 1px dashed #71daec;
+  max-width: 250px;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 23px;
+}
+
+.task2-button {
+  border: none;
+  width: 290px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.task2-button:hover {
+  background-color: #a4ffe1;
+}
+
+.hidden {
+  visibility: hidden;
 }

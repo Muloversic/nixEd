@@ -19,3 +19,22 @@ const stopDiv = () => clearInterval(moveIntervalId);
 
 divToMove.addEventListener('click', moveDiv);
 document.addEventListener('keydown', stopDiv);
+
+//TASK 2 Magic div
+const magicDiv = document.querySelector('.task2-div');
+document.addEventListener('DOMContentLoaded', () => {
+  magicDiv.classList.remove('hidden');
+});
+
+const magicLink = document.querySelector('.task2-link');
+
+magicLink.onclick = (e) => {
+  e.preventDefault();
+  magicDiv.classList.toggle('hidden');
+};
+
+const buttonCancle = document.querySelector('.task2-button');
+buttonCancle.addEventListener('click', (e) => {
+  e.preventDefault();
+  magicLink.onclick = false;
+});
