@@ -93,17 +93,38 @@ switchButton.addEventListener('click', (e) => {
 });
 
 //TASK 4 Prevent copy and dev tools
-const noselect = () => false;
-document.ondragstart = noselect;
-document.onselectstart = noselect;
-document.oncontextmenu = noselect;
+// const noselect = () => false;
+// document.ondragstart = noselect;
+// document.onselectstart = noselect;
+// document.oncontextmenu = noselect;
 
-document.addEventListener('keydown', function (event) {
-  if (
-    (event.ctrlKey && event.code == 'KeyU') ||
-    (event.ctrlKey && event.shiftKey && event.code == 'KeyI') ||
-    event.code == 'F12'
-  ) {
-    event.preventDefault();
-  }
+// document.addEventListener('keydown', function (event) {
+//   if (
+//     (event.ctrlKey && event.code == 'KeyU') ||
+//     (event.ctrlKey && event.shiftKey && event.code == 'KeyI') ||
+//     event.code == 'F12'
+//   ) {
+//     event.preventDefault();
+//   }
+// });
+
+//TASK 5 Wake up user
+const wakeupButtons = document.querySelector('.wakeup-buttons');
+const notification = document.querySelector('.wakeup');
+wakeupButtons.addEventListener('click', (e) => {
+  const userHere = [...e.target.classList].includes('wakeup-yes');
+  const userAway = [...e.target.classList].includes('wakeup-no');
+  if (userHere) notification.classList.add('hidden');
+  if (userAway) window.open('http://google.com', '_self');
 });
+
+const timer = 300; //seconds
+let counter = 0;
+document.onclick = () => (counter = 0);
+document.onmousemove = () => (counter = 0);
+document.onkeydown = () => (counter = 0);
+window.setInterval(checkUserPresence, 1000);
+function checkUserPresence() {
+  counter++;
+  if (counter >= timer) notification.classList.remove('hidden');
+}
